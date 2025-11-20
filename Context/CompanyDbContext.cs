@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +16,14 @@ namespace Company.Context
         //connection string
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server =. ;Database = Company; Trusted_Connection =True" );
+            //can Write . instade of Server name
+            optionsBuilder.UseSqlServer("Server=DESKTOP-0MDMFGG\\MSSQLSERVER04;Database=Company;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;");
         }
-
-        public DbSet<Employee> Employees { get; set; } //Mapping Class As A Table In DB
+        /// <summary>
+        ///If You Face This Error: A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+        ///Add This To Your Connection String : Encrypt=True;TrustServerCertificate=True;
+        /// </summary>
+        public DbSet<Employee> Employees { get; set; } //Mapping Class As A Table In Db
     }
 }
    

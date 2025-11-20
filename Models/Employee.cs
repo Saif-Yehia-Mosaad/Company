@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Company.Models
 
     ///EF support 4 ways for mapping classes to database(Table, viwe, function)
-    ///1.by convention(default behavior), 2. 
+    ///1.by convention(default behavior)
 
     ///poco class
     ///plain old clr object (don't contain any functionality or behaviors )
