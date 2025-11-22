@@ -16,7 +16,6 @@ namespace Company.Context
         //connection string
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //can Write . instade of Server name
             optionsBuilder.UseSqlServer("Server=DESKTOP-0MDMFGG\\MSSQLSERVER04;Database=Company;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;");
         }
         /// <summary>
