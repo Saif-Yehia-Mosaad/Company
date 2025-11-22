@@ -25,4 +25,12 @@ namespace Company.Context
         public DbSet<Employee> Employees { get; set; } //Mapping Class As A Table In Db
     }
 }
-   
+/*Add-Migration RenameEmployeeNameCoulmn Use This Command In Package Manager Console To Create Migration For Rename Column For Example
+        Use Update-Database command to apply this migration to the database
+        If You Want To Revert Applied Migration Use: PM> Update-Database -Migration InitialCreate
+        After Reverting Migration You Can Delete The Unwanted Migration File Manually Or Using Command Remove-Migration 
+        If I Wanna Revert First Migration Use: Update-Database 0 This Is A Special Command To Revert All Migrations  
+        If I Wanna Add New Column To Employee Class Use: Add-Migration AddEmployeeAdressColumn For Example */
+// If you want to remove a migration that is not the latest one:
+// Make the required code changes شىي •	I removed the line that declared the DbSet<Class> property, then create a new migration (Add-Migration).
+// The tooling will remove the old migration and generate a new one reflecting your changes

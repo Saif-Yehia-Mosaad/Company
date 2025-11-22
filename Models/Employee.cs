@@ -17,8 +17,11 @@ namespace Company.Models
     {
         // ? => Nullable
         public int Id { get; set; } //public numeric property named as "Id" | "EmployeeId --> pk[Use Identity(1,1)]
+
+        //Add New Column
         public string? Name { get; set; } //reference type :alow null[optional]
         public string Salary { get; set; } // value type : not allow null[required]
         public int? Age { get; set; } //Nullable<int> : alow null[optional]
+        public int Adress { get ; set; } // New Property Added
     }
 }
