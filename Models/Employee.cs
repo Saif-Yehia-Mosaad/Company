@@ -20,11 +20,12 @@ namespace Company.Models
 ///Add New Column
 ///public int Adress { get ; set; } // New Property Added
 
-///2.Data Annotations (Set Of Attributes)
+///2.Data Annotations (Set Of Attributes Use For Data Validation)
 
 ///poco class
 ///plain old clr object (don't contain any functionality or behaviors )
 {
+    [Table("Employees")] //map class to table with specific name
     internal class Employee
     {
         [Key]
@@ -40,14 +41,16 @@ namespace Company.Models
         ///[DataType(DataType.Currency)]
         ///it change only the way of displaying data not the data type in the db from double to money
         public double Salary { get; set; } // value type : not allow null[required]
-        ///[Range(18, 65)]
+        [Range(18, 65)]
         public int? Age { get; set; } //Nullable<int> : alow null[optional]
         public int Adress { get; set; }// New Property Added
-        ///[EmailAddress]
+        [EmailAddress]
         public int EmailAddress { get ; set; }
-        ///[Phone]
+        [NotMapped] //ignore this property
+        [Phone]
         public string PhoneNumber { get ; set; }
-        ///[DataType(DataType.Password)]
+        [NotMapped] //it will not create column in the db
+        [DataType(DataType.Password)] //frontend validation 
         public string Password { get ; set; }
 
     }

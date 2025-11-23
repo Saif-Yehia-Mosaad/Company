@@ -1,8 +1,9 @@
 ﻿using Company.Context;
-using Microsoft.EntityFrameworkCore.Migrations;
+using Company.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Runtime.CompilerServices;
+using Microsoft.EntityFrameworkCore.Migrations;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace Company
 {
@@ -12,13 +13,13 @@ namespace Company
         {
          CompanyDbContext dbContext = new CompanyDbContext();
 
-
+            ///dbContext.Employees.Where(E => E.Id == 1); Linq
+            ///dbContext.Set<Employee>(); //Ef Core Way To Get DbSet Used In Data Annotations Way
 
         }
     }
 }
 
-///dbContext.Employees.Where(E => E.Id == 1); Linq
 
 ///dbContext.Database.EnsureDeleted();//If Exist Delete It
 ///          // ===>This Way Isn't Effective Anymore Because In This Way Any Change Affect In Whole Data 

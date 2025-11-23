@@ -18,7 +18,8 @@ namespace Company.Context
         {
             optionsBuilder.UseSqlServer("Server=DESKTOP-0MDMFGG\\MSSQLSERVER04;Database=Company;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;");
         }
-        public DbSet<Employee> Employees { get; set; } //Mapping Class As A Table In Db
+        public DbSet<Employee> Employees { get; set; } //Mapping Class As A Table In Db by convention
+
     }
 }
 ///Add-Migration RenameEmployeeNameCoulmn Use This Command In Package Manager Console To Create Migration For Rename Column For Example
