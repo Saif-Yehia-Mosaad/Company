@@ -3,26 +3,52 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-
+using System.Threading.Tasks; 
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 namespace Company.Models
 
-    ///EF support 4 ways for mapping classes to database(Table, viwe, function)
-    ///1.by convention(default behavior)
+///EF support 4 ways for mapping classes to database(Table, viwe, function)
+
+///1.by convention(default behavior)
+///public int Id { get; set; } //public numeric property named as "Id" | "EmployeeId --> pk[Use Identity(1,1)]
+/// ? => Nullable
+///public string? Name { get; set; } //reference type :alow null[optional]
+///public string Salary { get; set; } // value type : not allow null[required]
+///public int? Age { get; set; } //Nullable<int> : alow null[optional]
+///Add New Column
+///public int Adress { get ; set; } // New Property Added
 
 ///2.Data Annotations (Set Of Attributes)
 
-    ///poco class
-    ///plain old clr object (don't contain any functionality or behaviors )
+///poco class
+///plain old clr object (don't contain any functionality or behaviors )
 {
     internal class Employee
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //(1,1)
         public int EmpId { get; set; }
+        ///[Required]
+        ///[Column(TypeName = "varchar(100)")]
+        ///[MaxLength(100)]
+        ///[StringLength(100, MinimumLength = 10)]
         public string? Name { get; set; } //reference type :alow null[optional]
-        public string Salary { get; set; } // value type : not allow null[required]
+        ///[AllowNull]
+        ///in the app it will be required but in the db it will allow null
+        ///[DataType(DataType.Currency)]
+        ///it change only the way of displaying data not the data type in the db from double to money
+        public double Salary { get; set; } // value type : not allow null[required]
+        ///[Range(18, 65)]
         public int? Age { get; set; } //Nullable<int> : alow null[optional]
-        public int Adress { get ; set; } // New Property Added
+        public int Adress { get; set; }// New Property Added
+        ///[EmailAddress]
+        public int EmailAddress { get ; set; }
+        ///[Phone]
+        public string PhoneNumber { get ; set; }
+        ///[DataType(DataType.Password)]
+        public string Password { get ; set; }
+
     }
 }

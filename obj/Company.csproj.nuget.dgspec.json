@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Clone\\Company.csproj": {}
+    "E:\\C#\\Clone\\Company.csproj": {}
   },
   "projects": {
-    "E:\\Clone\\Company.csproj": {
+    "E:\\C#\\Clone\\Company.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Clone\\Company.csproj",
+        "projectUniqueName": "E:\\C#\\Clone\\Company.csproj",
         "projectName": "Company",
-        "projectPath": "E:\\Clone\\Company.csproj",
+        "projectPath": "E:\\C#\\Clone\\Company.csproj",
         "packagesPath": "C:\\Users\\Hi-Tech\\.nuget\\packages\\",
-        "outputPath": "E:\\Clone\\obj\\",
+        "outputPath": "E:\\C#\\Clone\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
