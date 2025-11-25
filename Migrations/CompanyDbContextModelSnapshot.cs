@@ -46,7 +46,7 @@ namespace Company.Migrations
 
                     b.HasKey("EmpId");
 
-                    b.ToTable("Employees");
+                    b.ToTable("Employees", (string)null);
                 });
 #pragma warning restore 612, 618
         }

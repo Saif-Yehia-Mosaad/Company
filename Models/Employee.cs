@@ -7,27 +7,30 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
-namespace Company.Models
-
-///EF support 4 ways for mapping classes to database(Table, viwe, function)
-
-///1.by convention(default behavior)
-///public int Id { get; set; } //public numeric property named as "Id" | "EmployeeId --> pk[Use Identity(1,1)]
-/// ? => Nullable
-///public string? Name { get; set; } //reference type :alow null[optional]
-///public string Salary { get; set; } // value type : not allow null[required]
-///public int? Age { get; set; } //Nullable<int> : alow null[optional]
-///Add New Column
-///public int Adress { get ; set; } // New Property Added
-
-///2.Data Annotations (Set Of Attributes Use For Data Validation)
 
 ///poco class
 ///plain old clr object (don't contain any functionality or behaviors )
+
+namespace Company.Models
 {
     [Table("Employees")] //map class to table with specific name
     internal class Employee
     {
+        ///EF support 4 ways for mapping classes to database(Table, viwe, function)
+
+        #region By Convention
+        /////1.by convention(default behavior)
+        /////public int Id { get; set; } //public numeric property named as "Id" | "EmployeeId --> pk[Use Identity(1,1)]
+        ///// ? => Nullable
+        /////public string? Name { get; set; } //reference type :alow null[optional]
+        /////public string Salary { get; set; } // value type : not allow null[required]
+        /////public int? Age { get; set; } //Nullable<int> : alow null[optional]
+        /////Add New Column
+        /////public int Adress { get ; set; } // New Property Added
+        #endregion
+
+        #region data annotations
+        ///2.Data Annotations (Set Of Attributes Use For Data Validation)
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //(1,1)
         public int EmpId { get; set; }
@@ -45,13 +48,14 @@ namespace Company.Models
         public int? Age { get; set; } //Nullable<int> : alow null[optional]
         public int Adress { get; set; }// New Property Added
         [EmailAddress]
-        public int EmailAddress { get ; set; }
+        public int EmailAddress { get; set; }
         [NotMapped] //ignore this property
         [Phone]
-        public string PhoneNumber { get ; set; }
+        public string PhoneNumber { get; set; }
         [NotMapped] //it will not create column in the db
         [DataType(DataType.Password)] //frontend validation 
-        public string Password { get ; set; }
+        public string Password { get; set; }
+        #endregion
 
     }
 }
