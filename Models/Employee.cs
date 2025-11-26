@@ -18,7 +18,7 @@ namespace Company.Models
     {
         ///EF support 4 ways for mapping classes to database(Table, viwe, function)
 
-        #region By Convention
+        #region 1.By Convention
         /////1.by convention(default behavior)
         /////public int Id { get; set; } //public numeric property named as "Id" | "EmployeeId --> pk[Use Identity(1,1)]
         ///// ? => Nullable
@@ -29,7 +29,7 @@ namespace Company.Models
         /////public int Adress { get ; set; } // New Property Added
         #endregion
 
-        #region data annotations
+        #region 2.data annotations
         ///2.Data Annotations (Set Of Attributes Use For Data Validation)
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //(1,1)
@@ -55,6 +55,14 @@ namespace Company.Models
         [NotMapped] //it will not create column in the db
         [DataType(DataType.Password)] //frontend validation 
         public string Password { get; set; }
+        #endregion
+
+        #region 3.Fluent APIs
+        //3.Fluent APIs (In OnModelCreating Method In DbContext Class)
+        #endregion
+
+        #region 4.ConfigrationClass
+        //ConfigrationClass Per Entity --> Organize Fluent APIs In Separate Class
         #endregion
 
     }

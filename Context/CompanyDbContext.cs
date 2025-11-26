@@ -8,47 +8,26 @@ using System.Threading.Tasks;
 using Company.Models;
 using System.Net.Sockets;
 using LinkDev;
+using Company.Configrations;
 
 namespace Company.Context
 {
     internal class CompanyDbContext : DbContext //inherait from class Dbcontext
     {
 
-        //connection string
+        #region Connection String
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=DESKTOP-0MDMFGG\\MSSQLSERVER04;Database=Company;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;");
         }
+        #endregion
 
         #region Fluent APIs
         override protected void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //Fluent APIs  
-
-            modelBuilder.Entity<Department>(E => //Shortcut
-            {
-
-                E.ToTable("Departments", "dbo"); //InstadeOf public DbSet<Department> Departments { get; set; }
-                E.HasKey(d => d.DeptId); //Set Primary Key Using Fluent APIs
-                //E.HasKey("DeptId");   //Other Ways
-                //E.HasKey(nameof(Department.DeptId));
-
-                E
-                    .Property(D => D.Name)
-                    .IsRequired(true)
-                    .HasColumnType("Varchar")
-                    .HasColumnName("DepartmentName")
-                    .HasMaxLength(100)
-                    .HasAnnotation("MaxLenth", 50)
-                    .HasDefaultValue("Test");
-
-                E
-                    .Property(D => D.DateOfCreation)
-                    .HasComputedColumnSql("GETDATE");
-
-                base.OnModelCreating(modelBuilder);
-            });
-            
+            //Configure Department Entity Using Fluent API Configrations Class
+            modelBuilder.ApplyConfiguration(new DepartmentConfigrations());
+            base.OnModelCreating(modelBuilder);
         }
         #endregion
         public DbSet<Employee> Employees { get; set; }//Mapping Class As A Table In Db by convention
