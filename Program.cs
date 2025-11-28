@@ -11,11 +11,20 @@ namespace Company
     {
         static void Main(string[] args)
         {
-         CompanyDbContext dbContext = new CompanyDbContext();
+         CompanyDbContext dbContext = new CompanyDbContext(); //Open Connection
+            try
+            {
+                //CRUD operation
 
-            ///dbContext.Employees.Where(E => E.Id == 1); Linq
+            }
+            finally
+            {
+                //Close | Dispose Database Connection
+
+            }
+
+            ///dbContext.Employees.Where(E => E.Id == 1); //Linq
             ///dbContext.Set<Employee>(); //Ef Core Way To Get DbSet Used In Data Annotations Way
-
         }
     }
 }
