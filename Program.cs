@@ -23,8 +23,6 @@ namespace Company
 
             }
 
-            ///dbContext.Employees.Where(E => E.Id == 1); //Linq
-            ///dbContext.Set<Employee>(); //Ef Core Way To Get DbSet Used In Data Annotations Way
         }
     }
 }
