@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 
-///poco class
+///poco class 
 ///plain old clr object (don't contain any functionality or behaviors )
 
 namespace Company.Models
@@ -46,9 +46,8 @@ namespace Company.Models
         public double Salary { get; set; } // value type : not allow null[required]
         [Range(18, 65)]
         public int? Age { get; set; } //Nullable<int> : alow null[optional]
-        public int Adress { get; set; }// New Property Added
         [EmailAddress]
-        public int EmailAddress { get; set; }
+        public string EmailAddress { get; set; }
         [NotMapped] //ignore this property
         [Phone]
         public string PhoneNumber { get; set; }

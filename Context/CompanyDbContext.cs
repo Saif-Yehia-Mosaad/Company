@@ -30,11 +30,11 @@ namespace Company.Context
             base.OnModelCreating(modelBuilder);
         }
         #endregion
-        public DbSet<Employee> Employees { get; set; }//Mapping Class As A Table In Db by convention
+        public DbSet<Employee> Employees { get; set; }//Mapping Class As A Table In` Db by convention
         
 
     }
- }  
+ }
 #region My Comments
 ///Add-Migration RenameEmployeeNameCoulmn Use This Command In Package Manager Console To Create Migration For Rename Column For Example
 ///If You Want To Revert Applied Migration Use: PM> Update-Database -Migration InitialCreate
