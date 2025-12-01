@@ -30,7 +30,7 @@ namespace Company.Context
             base.OnModelCreating(modelBuilder);
         }
         #endregion
-        public DbSet<Employee> Employees { get; set; }//Mapping Class As A Table In` Db by convention
+        public DbSet<Employee> Employees { get; set; }//Mapping Class As A Table In Db by convention
         
 
     }

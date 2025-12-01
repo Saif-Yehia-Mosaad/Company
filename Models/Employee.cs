@@ -13,7 +13,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Company.Models
 {
-    [Table("Employees")] //map class to table with specific name
+    [Table("Employees" , Schema ="dbo")] //Using To Rename Classes And Select A Specific Schema
     internal class Employee
     {
         ///EF support 4 ways for mapping classes to database(Table, viwe, function)
