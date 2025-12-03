@@ -64,5 +64,7 @@ namespace Company.Models
         //ConfigrationClass Per Entity --> Organize Fluent APIs In Separate Class
         #endregion
 
+        public Department Department { get; set; } //Navigation Property To Represent Relationship Between Employee And Department => Each Employee Belong To One Department
+
     }
 }

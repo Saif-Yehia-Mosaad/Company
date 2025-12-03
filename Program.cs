@@ -97,14 +97,6 @@ namespace Company
 
             #endregion
 
-            var empmail = (from E in dbContext.Employees
-                          where E.EmailAddress == "saif58@gmail.com"
-                          select E).FirstOrDefault();
-
-            empmail.EmailAddress = "Yasmin@gmail.com";
-
-            dbContext.SaveChanges();
-
         }
     }
 }
