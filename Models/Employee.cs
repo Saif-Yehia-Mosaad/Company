@@ -16,7 +16,7 @@ namespace Company.Models
     [Table("Employees" , Schema ="dbo")] //Using To Rename Classes And Select A Specific Schema
     internal class Employee
     {
-        ///EF support 4 ways for mapping classes to database(Table, viwe, function)
+        //EF support 4 ways for mapping classes to database(Table, viwe, function)
 
         #region 1.By Convention
         /////1.by convention(default behavior)
@@ -34,15 +34,15 @@ namespace Company.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //(1,1)
         public int EmpId { get; set; }
-        ///[Required]
-        ///[Column(TypeName = "varchar(100)")]
-        ///[MaxLength(100)]
-        ///[StringLength(100, MinimumLength = 10)]
+        //[Required]
+        //[Column(TypeName = "varchar(100)")]
+        //[MaxLength(100)]
+        //[StringLength(100, MinimumLength = 10)]
         public string? Name { get; set; } //reference type :alow null[optional]
-        ///[AllowNull]
-        ///in the app it will be required but in the db it will allow null
-        ///[DataType(DataType.Currency)]
-        ///it change only the way of displaying data not the data type in the db from double to money
+        //[AllowNull]
+        //in the app it will be required but in the db it will allow null
+        //[DataType(DataType.Currency)]
+        //it change only the way of displaying data not the data type in the db from double to money
         public double Salary { get; set; } // value type : not allow null[required]
         [Range(18, 65)]
         public int? Age { get; set; } //Nullable<int> : alow null[optional]
@@ -64,7 +64,15 @@ namespace Company.Models
         //ConfigrationClass Per Entity --> Organize Fluent APIs In Separate Class
         #endregion
 
-        public Department Department { get; set; } //Navigation Property To Represent Relationship Between Employee And Department => Each Employee Belong To One Department
+        [ForeignKey("Department")] //Specify Foreign Key For Navigation Property
+        public int? DepartmentDeptId { get; set; } //FK
+
+        // [ForeignKey("Saifo")]
+
+        //Navigation Property To Represent Relationship Between Employee And Department => Each Employee Belong To One Department
+        [InverseProperty("Employees")]
+        public Department Department { get; set; }
 
     }
 }
+//If The Relationship Is ONE to M We Can Ignore The Navigation Property On The "ONE" Side

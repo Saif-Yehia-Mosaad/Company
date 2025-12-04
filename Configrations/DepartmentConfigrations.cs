@@ -1,16 +1,19 @@
-﻿using LinkDev;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Company.Models;
 
 namespace Company.Configrations
 {
     internal class DepartmentConfigrations : IEntityTypeConfiguration<Department>
     {
+        #region 4.ConfigrationClass
+        //ConfigrationClass Per Entity --> Organize Fluent APIs In Separate Class
+        #endregion
         public void Configure(EntityTypeBuilder<Department> E)
         {
             //Fluent APIs For Department Entity

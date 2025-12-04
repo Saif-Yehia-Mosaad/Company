@@ -292,5 +292,3 @@ E:\C#\Clone\obj\Debug\net9.0\refint\Company.dll
 E:\C#\Clone\obj\Debug\net9.0\Company.pdb
 E:\C#\Clone\obj\Debug\net9.0\Company.genruntimeconfig.cache
 E:\C#\Clone\obj\Debug\net9.0\ref\Company.dll
-E:\C#\Clone\bin\Debug\net9.0\Department.dll
-E:\C#\Clone\bin\Debug\net9.0\Department.pdb

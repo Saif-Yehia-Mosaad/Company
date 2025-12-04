@@ -1,14 +1,14 @@
-﻿using System;
-using System.IO;
+﻿using Company.Configrations;
+using Company.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-using Company.Models;
-using System.Net.Sockets;
-using LinkDev;
-using Company.Configrations;
 
 namespace Company.Context
 {
@@ -28,6 +28,31 @@ namespace Company.Context
             //Configure Department Entity Using Fluent API Configrations Class
             modelBuilder.ApplyConfiguration(new DepartmentConfigrations());
             base.OnModelCreating(modelBuilder);
+
+            //modelBuilder.Entity<Department>(E =>
+            //{
+
+
+            //    E.ToTable("Departments", "dbo"); //InstadeOf public DbSet<Department> Departments { get; set; }
+            //    E.HasKey(d => d.DeptId); //Set Primary Key Using Fluent APIs
+            //                             //E.HasKey("DeptId");   //Other Ways
+            //                             //E.HasKey(nameof(Department.DeptId));
+
+            //    E
+            //        .Property(D => D.Name)
+            //        .IsRequired(true)
+            //        .HasColumnType("Varchar")
+            //        .HasColumnName("DepartmentName")
+            //        .HasMaxLength(100)
+            //        .HasDefaultValue("Test");
+            //    //.HasAnnotation("MaxLenth", 50)
+
+            //    E
+            //        .Property(D => D.DateOfCreation)
+            //        .HasComputedColumnSql("GETDATE()");
+            //});
+            
+            
         }
         #endregion
         public DbSet<Employee> Employees { get; set; }//Mapping Class As A Table In Db by convention
