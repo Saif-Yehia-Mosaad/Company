@@ -64,14 +64,18 @@ namespace Company.Models
         //ConfigrationClass Per Entity --> Organize Fluent APIs In Separate Class
         #endregion
 
-        [ForeignKey("Department")] //Specify Foreign Key For Navigation Property
-        public int? DepartmentDeptId { get; set; } //FK
+        #region OneToManyRelationship By Convention & Data Annotations
+        //[ForeignKey("Department")] //Specify Foreign Key For Navigation Property
+        public int? DepartmentId { get; set; } //FK
 
         // [ForeignKey("Saifo")]
 
         //Navigation Property To Represent Relationship Between Employee And Department => Each Employee Belong To One Department
+
         [InverseProperty("Employees")]
         public Department Department { get; set; }
+        #endregion
+
 
     }
 }

@@ -10,6 +10,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Company.Context
 {
     internal class CompanyDbContext : DbContext //inherait from class Dbcontext
@@ -27,12 +28,10 @@ namespace Company.Context
         {
             //Configure Department Entity Using Fluent API Configrations Class
             modelBuilder.ApplyConfiguration(new DepartmentConfigrations());
-            base.OnModelCreating(modelBuilder);
 
+            #region Department Entity Configuration Using Fluent APIs
             //modelBuilder.Entity<Department>(E =>
             //{
-
-
             //    E.ToTable("Departments", "dbo"); //InstadeOf public DbSet<Department> Departments { get; set; }
             //    E.HasKey(d => d.DeptId); //Set Primary Key Using Fluent APIs
             //                             //E.HasKey("DeptId");   //Other Ways
@@ -51,8 +50,25 @@ namespace Company.Context
             //        .Property(D => D.DateOfCreation)
             //        .HasComputedColumnSql("GETDATE()");
             //});
-            
-            
+            #endregion
+
+            #region OneToManyRelationship Using Fluent APIs
+
+            modelBuilder.Entity<Department>()
+                .HasMany(D => D.Employees) //A Department Has Many Employees
+                .WithOne(E => E.Department) //An Employee Has One Department
+                .HasForeignKey(E => E.DepartmentId) //Foreign Key In Employee Table
+                .OnDelete(DeleteBehavior.Cascade); //Cascade Delete All Emp Frorm Department
+
+            //Or You Can Write It Like This:
+
+            //modelBuilder.Entity<Employee>()
+            //    .HasOne(E => E.Department) //An Employee Has One Department
+            //    .WithMany(D => D.Employees); //A Department Has Many Employees
+            #endregion
+
+
+            base.OnModelCreating(modelBuilder);
         }
         #endregion
         public DbSet<Employee> Employees { get; set; }//Mapping Class As A Table In Db by convention
