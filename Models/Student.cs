@@ -13,6 +13,7 @@ namespace Company.Models
         public int Age { get; set; }
         public string Address { get; set; }
 
+        //Navigational Property =>Many
         public ICollection<Course> Courses { get; set; } = new HashSet<Course>();
     }
 }

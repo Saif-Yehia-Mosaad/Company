@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\C#\\Clone\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\C#\\Clone\\Migrations\\20251207163347_ManyToManyRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251207163347_ManyToManyRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "20251207163347_ManyToManyRelationship.cs",
+              "DocumentMoniker": "E:\\C#\\Clone\\Migrations\\20251207163347_ManyToManyRelationship.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251207163347_ManyToManyRelationship.cs",
+              "ToolTip": "E:\\C#\\Clone\\Migrations\\20251207163347_ManyToManyRelationship.cs",
+              "RelativeToolTip": "Migrations\\20251207163347_ManyToManyRelationship.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwC8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T16:33:47.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CompanyDbContext.cs",
               "DocumentMoniker": "E:\\C#\\Clone\\Context\\CompanyDbContext.cs",
               "RelativeDocumentMoniker": "Context\\CompanyDbContext.cs",
@@ -67,33 +84,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Student.cs",
               "DocumentMoniker": "E:\\C#\\Clone\\Models\\Student.cs",
               "RelativeDocumentMoniker": "Models\\Student.cs",
               "ToolTip": "E:\\C#\\Clone\\Models\\Student.cs",
               "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-07T14:41:49.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Course.cs",
               "DocumentMoniker": "E:\\C#\\Clone\\Models\\Course.cs",
               "RelativeDocumentMoniker": "Models\\Course.cs",
               "ToolTip": "E:\\C#\\Clone\\Models\\Course.cs",
               "RelativeToolTip": "Models\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-07T14:42:09.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Department.cs",
               "DocumentMoniker": "E:\\C#\\Clone\\Models\\Department.cs",
               "RelativeDocumentMoniker": "Models\\Department.cs",
@@ -106,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Employee.cs",
               "DocumentMoniker": "E:\\C#\\Clone\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
@@ -119,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CompanyDbContextModelSnapshot.cs",
               "DocumentMoniker": "E:\\C#\\Clone\\Migrations\\CompanyDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\CompanyDbContextModelSnapshot.cs",

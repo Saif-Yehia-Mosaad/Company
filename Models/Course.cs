@@ -10,6 +10,8 @@ namespace Company.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public ICollection<Student> Students { get; set; } = new HashSet<Student>();
+
+        //Navigational Property =>Many
+        public ICollection<Student> Students { get; set; } = new HashSet<Student>(); 
     }
 }
