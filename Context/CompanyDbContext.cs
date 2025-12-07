@@ -72,6 +72,9 @@ namespace Company.Context
         }
         #endregion
         public DbSet<Employee> Employees { get; set; }//Mapping Class As A Table In Db by convention
+        //public DbSet<Department> Department { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Course> Courses { get; set; }
         
 
     }
