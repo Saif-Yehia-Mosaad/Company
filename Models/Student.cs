@@ -14,6 +14,8 @@ namespace Company.Models
         public string Address { get; set; }
 
         //Navigational Property =>Many
-        public ICollection<Course> Courses { get; set; } = new HashSet<Course>();
+        //public ICollection<Course> Courses { get; set; } = new HashSet<Course>(); //By Convention
+
+        public ICollection<StudentCourse> StudentCourses { get; set; } = new HashSet<StudentCourse>(); //Using Fluent APIs
     }
 }

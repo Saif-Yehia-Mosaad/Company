@@ -64,9 +64,31 @@ namespace Company.Context
 
             //modelBuilder.Entity<Employee>()
             //    .HasOne(E => E.Department) //An Employee Has One Department
-            //    .WithMany(D => D.Employees); //A Department Has Many Employees
+            //    .WithMany(D => D.Employees) //A Department Has Many Employees
+            //    .HasForeignKey(E => E.DepartmentId) //Foreign Key In Employee Table
+            //    .OnDelete(DeleteBehavior.Cascade);
             #endregion
 
+            #region ManyToManyRelationship Using Fluent APIs
+            //modelBuilder.Entity<Student>()
+            //    .HasMany(S => S.Courses)
+            //    .WithMany(C => C.Students);
+
+            //  modelBuilder.Entity<Course>() 
+            //    .HasMany(C => C.Students)
+            //    .WithMany(S => S.Courses);
+
+            modelBuilder.Entity<Student>()
+                .HasMany(S => S.StudentCourses)
+                .WithOne();
+
+            modelBuilder.Entity<Course>()
+                .HasMany(C => C.CourseStudents)
+                .WithOne();
+
+            //Composite Primary Key
+            modelBuilder.Entity<StudentCourse>().HasKey(sc => new { sc.StudentId, sc.CourseId });
+            #endregion
 
             base.OnModelCreating(modelBuilder);
         }
@@ -75,8 +97,6 @@ namespace Company.Context
         //public DbSet<Department> Department { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
-        
-
     }
  }
 #region My Comments

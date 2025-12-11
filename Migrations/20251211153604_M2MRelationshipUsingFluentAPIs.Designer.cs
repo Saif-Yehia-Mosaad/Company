@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Company.Migrations
 {
     [DbContext(typeof(CompanyDbContext))]
-    [Migration("20251207163347_ManyToManyRelationship")]
-    partial class ManyToManyRelationship
+    [Migration("20251211153604_M2MRelationshipUsingFluentAPIs")]
+    partial class M2MRelationshipUsingFluentAPIs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -123,19 +123,22 @@ namespace Company.Migrations
                     b.ToTable("Students");
                 });
 
-            modelBuilder.Entity("CourseStudent", b =>
+            modelBuilder.Entity("Company.Models.StudentCourse", b =>
                 {
-                    b.Property<int>("CoursesId")
+                    b.Property<int>("StudentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("StudentsId")
+                    b.Property<int>("CourseId")
                         .HasColumnType("int");
 
-                    b.HasKey("CoursesId", "StudentsId");
+                    b.Property<int>("Grade")
+                        .HasColumnType("int");
 
-                    b.HasIndex("StudentsId");
+                    b.HasKey("StudentId", "CourseId");
 
-                    b.ToTable("CourseStudent");
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("StudentCourse");
                 });
 
             modelBuilder.Entity("Company.Models.Employee", b =>
@@ -148,24 +151,34 @@ namespace Company.Migrations
                     b.Navigation("Department");
                 });
 
-            modelBuilder.Entity("CourseStudent", b =>
+            modelBuilder.Entity("Company.Models.StudentCourse", b =>
                 {
                     b.HasOne("Company.Models.Course", null)
-                        .WithMany()
-                        .HasForeignKey("CoursesId")
+                        .WithMany("CourseStudents")
+                        .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Company.Models.Student", null)
-                        .WithMany()
-                        .HasForeignKey("StudentsId")
+                        .WithMany("StudentCourses")
+                        .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Company.Models.Course", b =>
+                {
+                    b.Navigation("CourseStudents");
                 });
 
             modelBuilder.Entity("Company.Models.Department", b =>
                 {
                     b.Navigation("Employees");
+                });
+
+            modelBuilder.Entity("Company.Models.Student", b =>
+                {
+                    b.Navigation("StudentCourses");
                 });
 #pragma warning restore 612, 618
         }

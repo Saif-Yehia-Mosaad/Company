@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\C#\\Clone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\C#\\Clone\\Migrations\\20251207163347_ManyToManyRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251207163347_ManyToManyRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\C#\\Clone\\Migrations\\20251211153604_M2MRelationshipUsingFluentAPIs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251211153604_M2MRelationshipUsingFluentAPIs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\models\\studentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|solutionrelative:models\\studentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,12 +19,24 @@
       "RelativeMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|solutionrelative:context\\companydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\migrations\\20251206202157_onetomanyrelationshipusingfluentapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|solutionrelative:migrations\\20251206202157_onetomanyrelationshipusingfluentapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\migrations\\20251204011019_onetomanyrelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|solutionrelative:migrations\\20251204011019_onetomanyrelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EEA34E6-6468-41BF-BAEA-FC7916A21D54}|Company.csproj|e:\\c#\\clone\\migrations\\companydbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -40,6 +52,75 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Course.cs",
+              "DocumentMoniker": "E:\\C#\\Clone\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "E:\\C#\\Clone\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T14:42:09.987Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "E:\\C#\\Clone\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "E:\\C#\\Clone\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T14:41:49.57Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CompanyDbContext.cs",
+              "DocumentMoniker": "E:\\C#\\Clone\\Context\\CompanyDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\CompanyDbContext.cs",
+              "ToolTip": "E:\\C#\\Clone\\Context\\CompanyDbContext.cs",
+              "RelativeToolTip": "Context\\CompanyDbContext.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAQwFgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:33:35.715Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentCourse.cs",
+              "DocumentMoniker": "E:\\C#\\Clone\\Models\\StudentCourse.cs",
+              "RelativeDocumentMoniker": "Models\\StudentCourse.cs",
+              "ToolTip": "E:\\C#\\Clone\\Models\\StudentCourse.cs",
+              "RelativeToolTip": "Models\\StudentCourse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T00:23:13.294Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20251211153604_M2MRelationshipUsingFluentAPIs.cs",
+              "DocumentMoniker": "E:\\C#\\Clone\\Migrations\\20251211153604_M2MRelationshipUsingFluentAPIs.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251211153604_M2MRelationshipUsingFluentAPIs.cs",
+              "ToolTip": "E:\\C#\\Clone\\Migrations\\20251211153604_M2MRelationshipUsingFluentAPIs.cs",
+              "RelativeToolTip": "Migrations\\20251211153604_M2MRelationshipUsingFluentAPIs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:36:04.903Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -58,85 +139,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20251207163347_ManyToManyRelationship.cs",
-              "DocumentMoniker": "E:\\C#\\Clone\\Migrations\\20251207163347_ManyToManyRelationship.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251207163347_ManyToManyRelationship.cs",
-              "ToolTip": "E:\\C#\\Clone\\Migrations\\20251207163347_ManyToManyRelationship.cs",
-              "RelativeToolTip": "Migrations\\20251207163347_ManyToManyRelationship.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwC8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T16:33:47.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CompanyDbContext.cs",
-              "DocumentMoniker": "E:\\C#\\Clone\\Context\\CompanyDbContext.cs",
-              "RelativeDocumentMoniker": "Context\\CompanyDbContext.cs",
-              "ToolTip": "E:\\C#\\Clone\\Context\\CompanyDbContext.cs",
-              "RelativeToolTip": "Context\\CompanyDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwEoAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T20:33:35.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Student.cs",
-              "DocumentMoniker": "E:\\C#\\Clone\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "E:\\C#\\Clone\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T14:41:49.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Course.cs",
-              "DocumentMoniker": "E:\\C#\\Clone\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "Models\\Course.cs",
-              "ToolTip": "E:\\C#\\Clone\\Models\\Course.cs",
-              "RelativeToolTip": "Models\\Course.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T14:42:09.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Department.cs",
               "DocumentMoniker": "E:\\C#\\Clone\\Models\\Department.cs",
               "RelativeDocumentMoniker": "Models\\Department.cs",
               "ToolTip": "E:\\C#\\Clone\\Models\\Department.cs",
               "RelativeToolTip": "Models\\Department.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T20:33:43.065Z",
+              "WhenOpened": "2025-12-10T17:42:01.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Employee.cs",
               "DocumentMoniker": "E:\\C#\\Clone\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
               "ToolTip": "E:\\C#\\Clone\\Models\\Employee.cs",
               "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwEwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T20:33:42.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
+              "Title": "20251206202157_OneToManyRelationshipUsingFluentAPI.cs",
+              "DocumentMoniker": "E:\\C#\\Clone\\Migrations\\20251206202157_OneToManyRelationshipUsingFluentAPI.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251206202157_OneToManyRelationshipUsingFluentAPI.cs",
+              "ToolTip": "E:\\C#\\Clone\\Migrations\\20251206202157_OneToManyRelationshipUsingFluentAPI.cs",
+              "RelativeToolTip": "Migrations\\20251206202157_OneToManyRelationshipUsingFluentAPI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T16:19:13.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20251204011019_OneToManyRelationship.cs",
+              "DocumentMoniker": "E:\\C#\\Clone\\Migrations\\20251204011019_OneToManyRelationship.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251204011019_OneToManyRelationship.cs",
+              "ToolTip": "E:\\C#\\Clone\\Migrations\\20251204011019_OneToManyRelationship.cs",
+              "RelativeToolTip": "Migrations\\20251204011019_OneToManyRelationship.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T16:19:10.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CompanyDbContextModelSnapshot.cs",
               "DocumentMoniker": "E:\\C#\\Clone\\Migrations\\CompanyDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\CompanyDbContextModelSnapshot.cs",
@@ -144,8 +198,7 @@
               "RelativeToolTip": "Migrations\\CompanyDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T20:33:39.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T20:33:39.647Z"
             }
           ]
         }
